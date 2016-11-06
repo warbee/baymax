@@ -1,0 +1,19 @@
+a:2:{i:0;s:813:"    <li class="activity-entry">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/uploads/profile_image/e5c1dabd-f006-4d8e-b073-49def0bfb0ee.jpg?m=1478445201">
+            
+            <!-- Show space image, if you are outside from a space -->
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Warren Bartolome</strong> created this space.<br/>
+
+                <!-- show time -->
+                <span class="time" title="2016-11-06T07:07:13+01:00">Nov 6, 2016 - 7:07 AM</span>            </div>
+        </div>
+    </li>
+";i:1;N;}

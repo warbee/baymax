@@ -1,0 +1,114 @@
+2016-11-06 16:09:50 [::1][-][b2d4944559af2653e4ce54ffe252c8a5][error][yii\web\HttpException:401] yii\web\HttpException: You need to login to view this user profile! in /Users/warren/projects/wasabi/protected/humhub/modules/user/behaviors/ProfileController.php:72
+Stack trace:
+#0 [internal function]: humhub\modules\user\behaviors\ProfileController->checkAccess()
+#1 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Component.php(282): call_user_func_array(Array, Array)
+#2 /Users/warren/projects/wasabi/protected/humhub/modules/content/components/ContentContainerController.php(137): yii\base\Component->__call('checkAccess', Array)
+#3 /Users/warren/projects/wasabi/protected/humhub/modules/content/components/ContentContainerController.php(97): humhub\modules\content\components\ContentContainerController->checkContainerAccess()
+#4 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\content\components\ContentContainerController->init()
+#5 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Controller.php(84): yii\base\Object->__construct(Array)
+#6 [internal function]: yii\base\Controller->__construct('profile', Object(humhub\modules\user\Module), Array)
+#7 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/di/Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#8 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#9 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/BaseYii.php(340): yii\di\Container->get('humhub\\modules\\...', Array)
+#10 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(567): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#11 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('profile')
+#12 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->createController('')
+#13 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('profile')
+#14 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('user/profile', Array)
+#15 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /Users/warren/projects/wasabi/index.php(25): yii\base\Application->run()
+#17 {main}
+2016-11-06 16:09:50 [::1][-][b2d4944559af2653e4ce54ffe252c8a5][info][application] $_GET = [
+    'r' => 'user/profile'
+    'uguid' => '999655ac-ba31-4307-8066-4364a03d3a64'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/index.php?r='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'gsScrollPos=0; SQLiteManager_currentLangue=2; PHPSESSID=b2d4944559af2653e4ce54ffe252c8a5; _csrf=280538b6296a015eb512bce32c10d4cb5a5a93587ce8a3a75695359a3fac618ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221H21_NJilhTiLLi9w4r6bJpd1secazpq%22%3B%7D; pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_user-statistics-panel=expanded; pm_spaces-statistics-panel=expanded'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.12 PHP/7.0.12 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/warren/projects/wasabi'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/warren/projects/wasabi/index.php'
+    'REMOTE_PORT' => '54902'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile&uguid=999655ac-ba31-4307-8066-4364a03d3a64'
+    'REQUEST_URI' => '/index.php?r=user%2Fprofile&uguid=999655ac-ba31-4307-8066-4364a03d3a64'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478444990.41
+    'REQUEST_TIME' => 1478444990
+    'argv' => [
+        0 => 'r=user%2Fprofile&uguid=999655ac-ba31-4307-8066-4364a03d3a64'
+    ]
+    'argc' => 1
+]
+2016-11-06 16:23:17 [::1][-][-][error][yii\web\HttpException:404] yii\web\HttpException: User not found! in /Users/warren/projects/wasabi/protected/humhub/modules/content/components/ContentContainerController.php:79
+Stack trace:
+#0 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\content\components\ContentContainerController->init()
+#1 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Controller.php(84): yii\base\Object->__construct(Array)
+#2 [internal function]: yii\base\Controller->__construct('profile', Object(humhub\modules\user\Module), Array)
+#3 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/di/Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#5 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/BaseYii.php(340): yii\di\Container->get('humhub\\modules\\...', Array)
+#6 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(567): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#7 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('profile')
+#8 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->createController('')
+#9 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('profile')
+#10 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('user/profile', Array)
+#11 /Users/warren/projects/wasabi/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /Users/warren/projects/wasabi/index.php(25): yii\base\Application->run()
+#13 {main}
+2016-11-06 16:23:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/profile'
+    'uguid' => '999655ac-ba31-4307-8066-4364a03d3a64v'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.12 PHP/7.0.12 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/warren/projects/wasabi'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/warren/projects/wasabi/index.php'
+    'REMOTE_PORT' => '55148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile&uguid=999655ac-ba31-4307-8066-4364a03d3a64v'
+    'REQUEST_URI' => '/index.php?r=user%2Fprofile&uguid=999655ac-ba31-4307-8066-4364a03d3a64v'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478445797.79
+    'REQUEST_TIME' => 1478445797
+    'argv' => [
+        0 => 'r=user%2Fprofile&uguid=999655ac-ba31-4307-8066-4364a03d3a64v'
+    ]
+    'argc' => 1
+]
